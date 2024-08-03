@@ -1,0 +1,94 @@
+/* Reset default styles */
+body,
+h1,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #e9ecef;
+    color: #495057;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom if added */
+}
+
+header {
+    background: linear-gradient(90deg, #0044cc, #0062cc);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Form container styles */
+.form-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.add-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.add-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+.add-form button:active {
+    background-color: #004494;
+    transform: scale(0.98);
+}
